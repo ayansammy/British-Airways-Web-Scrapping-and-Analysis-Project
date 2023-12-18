@@ -1,4 +1,4 @@
-# British-Airways-Web-Scrapping-and-Analysis-Project
+# British Airways Customer Reviews Analysis
 Web scraping project to gain company insights
 
 # Introduction
