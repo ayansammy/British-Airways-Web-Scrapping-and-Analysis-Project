@@ -18,7 +18,7 @@ Overview
 
 - In the initial phase of my analysis, I conducted sentiment analysis on customer reviews to gauge the overall sentiment towards British Airways. The sentiment scores were derived using the TextBlob library in Python. This library provides a simple and intuitive way to analyze the sentiment of text data, assigning polarity scores to indicate the positivity or negativity of the content. Additionally, the analysis includes subjectivity scores, which measure the degree of objectivity or subjectivity in the reviews. The sentiment scores were then used to categorize each review into one of three categories: 'Positive,' 'Neutral,' or 'Negative,' based on the polarity scores.
 
-## Findings**
+## Findings
 
 **Positive Sentiment:**
 
