@@ -1,124 +1,87 @@
 # British Airways Customer Reviews Analysis
-Web scraping project to gain company insights
+*Web scraping project to gain company insights*
 
 # Introduction
 British Airways (BA) is the flag carrier airline of the United Kingdom (UK). Every day, thousands of BA flights arrive to and depart from the UK, carrying customers across the world. Whether it’s for holidays, work or any other reason, the end-to-end process of scheduling, planning, boarding, fuelling, transporting, landing, and continuously running flights on time, efficiently and with top-class customer service is a huge task with many highly important responsibilities.
 
 # Objective
-As a data scientist at BA, it will be your job to apply your analytical skills to influence real life multi-million-pound decisions from day one, making a tangible impact on the business as your recommendations, tools and models drive key business decisions, reduce costs and increase revenue.
+* Develop and execute a web scraping strategy to collect customer feedback related to BA's services.
+* Review and analyze data obtained from third-party sources, identifying patterns, trends, and key insights.
+* Utilize analytical skills to extract valuable information regarding customer feelings, needs, and opinions.
+* Provide recommendations based on the analyzed data to enhance customer experience and inform business decisions.
 
-Customers who book a flight with BA will experience many interaction points with the BA brand. Understanding a customer's feelings, needs, and feedback is crucial for any business, including BA.
+# Tools Used
+* Jupyter Notebook (Python)
+* Matplotlib
+* Seaborn
+* Pandas
+* Numpy
+* Textblob
+* WordCloud
+* Latent Dirchilet Allocation
+* CountVectorizer
+* BeautifulSoup
+* Requests
 
-This first task is focused on scraping and collecting customer feedback and reviewing data from a third-party source and analysing this data to present any insights you may uncover.
 
 # Analysis
 **Sentiment Analysis**
 
-Overview
+## Overview
 
 - In the initial phase of my analysis, I conducted sentiment analysis on customer reviews to gauge the overall sentiment towards British Airways. The sentiment scores were derived using the TextBlob library in Python. This library provides a simple and intuitive way to analyze the sentiment of text data, assigning polarity scores to indicate the positivity or negativity of the content. Additionally, the analysis includes subjectivity scores, which measure the degree of objectivity or subjectivity in the reviews. The sentiment scores were then used to categorize each review into one of three categories: 'Positive,' 'Neutral,' or 'Negative,' based on the polarity scores.
 
 ## Findings
 
-**Positive Sentiment:**
+The above bar plot conveys the sentiment distribution across a set of customer reviews, segmented into three distinct categories: Positive, Negative, and Neutral
 
-- The sentiment analysis revealed a significant prevalence of positive sentiments among the customer reviews for British Airways. Key insights from the positive sentiment analysis include:
-***High Satisfaction Rates:**
-- The predominant height of the positive sentiment bar in the distribution plot indicates a majority of favorable evaluations. This suggests that a substantial number of customers express high satisfaction with their experiences with British Airways.
-  
-**Positive Customer Experiences:** 
-- The overall distribution implies a favorable perception by reviewers, indicating positive experiences with the airline's services. Positive sentiments could be associated with various aspects such as excellent customer service, comfortable flights, and overall pleasant travel experiences.
+The predominant height of the Positive sentiment bar indicates a majority of favorable evaluations, overshadowing the less frequent Negative sentiments and the scarcely represented Neutral feedback. This distribution implies a favorable overall perception by the reviewers, with a substantial number expressing satisfaction. The lesser, yet significant, volume of Negative reviews highlights areas where improvements could be beneficial. The scarcity of Neutral sentiment suggests that the experiences being reviewed generally elicit a definitive opinion, either affirmatively or adversely.
 
-**Negative Sentiment:**
-- While the majority of sentiments are positive, the analysis also revealed noteworthy insights from the negative sentiment category. Key findings from the negative sentiment analysis include:
-
-**Areas of Improvement:** 
-- The less frequent but significant volume of negative reviews highlights specific areas where improvements could be beneficial. Identifying these pain points is crucial for addressing customer concerns and enhancing overall service quality.
-
-**Common Concerns:** 
-- The negative sentiment category may point to common concerns raised by customers. These concerns could include issues related to flight delays, customer service experiences, or other aspects that negatively impact the customer journey.
-
-**Visualization Reference:**
-- The visuals supporting these findings, including the sentiment distribution bar plot, can be viewed in detail in the attached Jupyter Notebook. The notebook provides a comprehensive overview of the sentiment analysis, offering a visual representation of customer sentiments towards British Airways.
-
-## Word Clouds Analysis
+# Word Clouds Analysis
 I utilized word cloud visualizations to identify the most frequent words associated with customer reviews. This visual approach allowed me to pinpoint dominant themes and topics across the dataset.
 
 **Key Insights**
 
 **Positive Sentiment Word Cloud:**
+Using Word Cloud to Visualize Top 20 Positive Reviews
 
-The positive sentiment word cloud provides valuable insights into the aspects of British Airways' service that resonate positively with customers:
 
-**Service Excellence:** 
-- The prominent inclusion of the word "service" underscores the critical role that high-quality service plays in creating positive customer experiences. Customers appreciate and highlight the airline's commitment to service excellence.
-**Comfortable Seating:**
-- The conspicuous presence of "seat" indicates that seating comfort, along with available options, significantly contributes to passenger satisfaction. This suggests that customers find the airline's seating arrangements to be comfortable and accommodating.
+The word cloud above represents Positive Sentiment Reviews. It is a visual compilation of the most frequently mentioned terms within favorable feedback. It highlights areas of customer satisfaction through the prominence of certain words, reflecting key aspects of the airline’s service that have resonated positively with passengers.
 
-**Food and Beverage Appreciation:** 
-- The terms "food" and "drink" stand out, indicating that customers generally appreciate the food and beverage offerings on board. This contributes positively to the overall travel experience.
-  
-**Positive Flight Experiences:** 
-- The central placement and size of the word "flight" suggest that customers frequently praise the general flight experience. This likely encompasses factors such as punctuality, smoothness of the journey, and overall comfort during the flight.
 
-**Commendable Crew Interactions:** 
-- The inclusion of "crew" suggests favorable interactions or experiences with the airline's staff. This highlights the impact of personal service on the overall flight experience.
 
-**Brand Perception:** 
-- The presence of "British Airways" (BA) in the word cloud associated with positive reviews indicates that customers have a favorable perception of the brand. The airline's name is often linked with positive sentiments in customer feedback.
+The following insights can be gleaned from the areas of importance indicated by the size and frequency of the words:
 
-**Premium Class Satisfaction:** 
-- The distinct mention of "business class" within the cloud points to a higher level of satisfaction among passengers traveling in this premium category. It reflects positive experiences and perceptions associated with premium-class services.
-***These insights provide a comprehensive understanding of the areas where British Airways excels from the perspective of its customers, offering valuable feedback for maintaining and enhancing service quality.***
+- Service: Its prominence in the word cloud underscores the crucial role that quality service plays in creating positive customer experiences. The emphasis on service points to its perceived value among passengers.
+- Seat: The visibility of this word suggests that seating both its comfort and the options available is a significant contributor to passenger satisfaction.
+- Food and Drink: These terms are noticeable and indicate that the food and beverage offerings on board are generally appreciated by customers, contributing positively to their overall experience. 
+- Flight: The word ‘flight’ appears large and central, indicating that it is a common theme in positive reviews. This likely pertains to the general flight experience, encompassing various elements such as punctuality, smoothness of the journey, and overall comfort.
+- Crew: The word ‘crew’ is indicative of favorable interactions or experiences with the airline’s staff, highlighting the impact of personal service on the flight experience.
+- Business Class: The term ‘business class’ is distinct within the cloud, which points to a higher level of satisfaction among passengers traveling in this premium category.
+*These insights reflect the airline’s successful areas from the perspective of its customers and can be used to maintain and enhance service quality where it is most appreciated.*
 
-**Negative Sentiment Word Cloud:**
+Visualizing Top 20 Negative Reviews
+
+
+The word cloud for Negative Sentiment Reviews displays the words most commonly found in unfavorable British Airways reviews, giving us clues about what might be upsetting customers. The size and prominence of certain words highlight the primary concerns.
 The negative sentiment word cloud sheds light on common concerns expressed by customers in unfavorable reviews:
-**Time and Delay Issues:** 
-- The prominence of "time" and "delayed" indicates that customers frequently express dissatisfaction regarding flights not adhering to schedule. This encompasses complaints about flights leaving late or taking longer than expected.
+- Time and Delayed: These big words in the cloud tell us that customers often mention being unhappy about flights not being on time. This includes flights leaving late or taking too long.
+- Seat: Since ‘seat’ pops up a lot in negative reviews, it seems that people are not always happy with their seating. It could be because the seats aren’t comfortable, there’s not enough room, or they had trouble getting the seat they wanted.
+- Food: ‘Food’ shows up in both good and bad reviews, which means that sometimes the meals on the plane are a hit, and other times people really don’t like them.
+- Staff: The word ‘staff’ here suggests that sometimes the people working on the plane or at the airport might not be making customers happy, maybe because they aren’t as helpful or friendly as expected.
+- London: Seeing ‘london’ in the cloud hints that some problems might be linked to flights going to or coming from London, or maybe things happening at London’s airports.
 
-**Seating Discomfort:**
-- The repeated appearance of "seat" in negative reviews suggests that customers are not always satisfied with their seating arrangements. Issues related to comfort, space, or difficulties in securing desired seats contribute to negative sentiments.
+These insights draw attention to the operational and service areas where the airline could focus its improvements to enhance customer satisfaction and reduce negative feedback.
 
-**Food Challenges:** 
-- While "food" appears in both positive and negative reviews, its presence in the negative cloud suggests that there are instances where customers express displeasure with the meals on the plane.
+# Topic Modeling
 
-**Staff Interactions:** 
-- The inclusion of "staff" in negative reviews indicates that interactions with personnel on the plane or at the airport may contribute to customer dissatisfaction. This could be attributed to perceived unhelpfulness or unfriendliness.
+**Using CountVectorizer and LatentDirichletAllocation for Topic Modeling**
 
-**London-Related Problems:** 
-- The appearance of "London" hints at potential issues linked to flights to or from London or experiences at London's airports. Identifying and addressing these specific concerns is crucial for improving customer satisfaction.
-***These insights draw attention to operational and service areas where British Airways could focus its efforts to enhance customer satisfaction and mitigate negative feedback effectively.***
-
-**Common Insights from Word Clouds:**
-**Service and Staff Importance:** 
-- Words like "service" and "staff" are consistently prominent, indicating their significant mention across both positive and negative reviews. This emphasizes the critical role that service quality and staff interactions play in shaping customer perceptions.
-
-**Importance of Seating:** 
-- The recurring theme of "seat" in both positive and negative contexts underscores its importance in customer expectations. Seating comfort and related experiences are key considerations for passengers.
-
-**Operational Challenges:** 
-- Terms like "cancelled," "delayed," "refund," and "baggage" highlight specific operational challenges and pain points that customers frequently mention. Addressing these issues is crucial for improving overall service reliability.
-
-**Positive and Negative Sentiments Coexisting:** 
-- The presence of both positive and negative terms in the word clouds reflects the varied sentiment landscape. Customers have diverse experiences, with positive aspects often coexisting with areas that need improvement.
-
-**Customer Expectations:** 
-- The recurrence of words like "booking," "London," and specific travel-related terms indicates that customer expectations are influenced by the booking process, travel routes, and locations. Addressing these expectations is vital for a positive customer experience.
-
-**Focus on Premium Class and Lounges:** 
-- Terms like "business class" and "lounge" are distinct within the clouds, suggesting that premium services contribute significantly to both positive and negative sentiments. Focusing on enhancing these premium experiences could further elevate customer satisfaction.
-***These common insights provide a holistic view of customer sentiments and areas of focus for British Airways to continue delivering exceptional service while addressing specific challenges.***
-
-
-## Topic Modeling Using CountVectorizer and LatentDirichletAllocation
-*Text vectorization**
-- This is the process of converting textual data into a numerical representation, allowing machine learning algorithms to work with text. It involves transforming text documents into feature vectors. We will be using Count Vectorizer to perform this operation.
-**CountVectorizer**
-- This is a feature extraction technique used in natural language processing (NLP) to convert text data into numerical feature vectors. It is a part of the scikit-learn library in Python. CountVectorizer operates by tokenizing text documents, converting them into a matrix of token counts.
-**Latent Dirichlet Allocation (LDA)**
-- LDA is often categorized as a topic modeling technique, it can also be considered a form of feature engineering. It processes the features created by CountVectorizer (or another vectorizer) to discover the underlying topics in a text corpus. In doing so, it generates a new set of features related to the topics within the documents. Each document is then described by its distribution of topics, and each topic is characterized by its distribution of words. These topic distributions can be used as features in downstream tasks, such as document classification, clustering, or as part of a recommendation system.
+CountVectorizer is a feature extraction technique used in natural language processing (NLP) to convert text data into numerical feature vectors. It is a part of the scikit-learn library in Python. CountVectorizer operates by tokenizing text documents, converting them into a matrix of token counts.
+Latent Dirichlet Allocation (LDA) LDA is often categorized as a topic modeling technique, it can also be considered a form of feature engineering. It processes the features created by CountVectorizer (or another vectorizer) to discover the underlying topics in a text corpus. In doing so, it generates a new set of features related to the topics within the documents. Each document is then described by its distribution of topics, and each topic is characterized by its distribution of words. These topic distributions can be used as features in downstream tasks, such as document classification, and clustering, or as part of a recommendation system.
 
 ## Topic Modeling Results
+
 **Latent Dirichlet Allocation (LDA)**
 I applied Latent Dirichlet Allocation (LDA) to identify underlying topics within the customer reviews.
 **Identified Topics:**
@@ -128,37 +91,32 @@ I applied Latent Dirichlet Allocation (LDA) to identify underlying topics within
 - Topic #4: flight, ba, airline, hours, time, luggage, help, airport, nov, airways
 - Topic #5: flight, heading, seats, ba, airways, british, flights, london, glory, airport
 
-## Using word cloud
-**Topic 1: Premium Class Experience**
+**Topic 1:**
+- Dominant words: class, flight, food, good, seat, ba, business, service, crew, seats
+- Insight: This topic highlights experiences related to flying in business class. Customers appreciate the quality of service, good food, and comfortable seats provided by British Airways. The use of “business” suggests a positive sentiment associated with premium class travel.
 
-**Dominant words:**
-- class, flight, food, good, seat, BA, business, service, crew, seats.
-Customers appreciate the quality of service, good food, and comfortable seats associated with flying in business class. Positive sentiments are linked to premium class travel.
-**Topic 2: Flights to Tokyo**
-  
-**Dominant words:**
-- flight, BA, Tokyo, British, Airways, tour, service, crew, Heathrow, LHR.
-Centered around flights to Tokyo, customers discuss service quality, crew interactions, and experiences at Heathrow Airport. The term "tour" suggests potential discussions about travel activities associated with these flights.
+**Topic 2:**
+- Dominant words: flight, ba, tokyo, british, airways, tour, service, crew, heathrow, lhr.
+- Insight: This topic centers around flights to Tokyo with British Airways. Customers discuss the service quality, crew interactions, and possibly experiences at Heathrow Airport (“heathrow” and “lhr”). The term “tour” indicates a potential discussion about travel tours or sightseeing activities associated with these flights.
 
-**Topic 3: Flights to and from London**
-**Dominant words:** 
-- flight, BA, service, London, time, British, Airways, staff, hours, Heathrow.
-Focuses on flights to and from London, particularly Heathrow. Customers discuss service quality, staff interactions, and flight duration. Heathrow is emphasized, suggesting a connection to the London airport.
+**Topic 3:**
+- Dominant words: flight, ba, service, london, time, british, airways, staff, hours, heathrow.
+- Insight: This topic focuses on flights to and from London, particularly Heathrow. Customers discuss the service quality, staff interactions, and possibly the duration of flights (“hours”). The mention of “heathrow” suggests a connection to the London airport.
 
-**Topic 4: General Airline Experiences**
-**Dominant words:** 
-- flight, BA, airline, hours, time, luggage, help, airport, Nov, Airways.
-Covers various aspects of flying with British Airways, including discussions about the airline itself, luggage assistance, and airport experiences. "Nov" might be related to specific events or experiences in November.
+**Topic 4:**
+- Dominant words: flight, ba, airline, hours, time, luggage, help, airport, nov, airways.
+- Insight: This topic covers various aspects of flying with British Airways, including discussions about the airline itself, help with luggage, and experiences at the airport. The mention of “nov” might be related to specific events or experiences in November.
 
-**Topic 5: Overall Flight Experiences and Destinations**
-**Dominant words:** 
-- flight, heading, seats, BA, Airways, British, flights, London, glory, airport.
-Encompasses discussions about flights with British Airways, focusing on seat comfort, heading to different destinations, and overall experiences at airports. The term "glory" suggests positive or memorable experiences associated with flying.
+**Topic 5:**
+- Dominant words: flight, heading, seats, ba, airways, british, flights, london, glory, airport.
+- Insight: This topic encompasses discussions about flights with British Airways, focusing on aspects such as seat comfort, heading to different destinations, and experiences at airports. The term “glory” suggests positive or memorable experiences associated with flying.
 
-**General insights from Topic Modeling:**
-- Each topic represents a different facet of the flying experience, offering nuanced insights into customer sentiments and preferences.
-- Addressing specific areas highlighted in each topic can contribute to a more tailored and satisfying customer experience with British Airways.
-- The detailed sentiment, word cloud, and topic analyses, along with the associated visualizations, can be explored in the Jupyter notebook attached. These findings provide a comprehensive understanding of customer feedback, enabling British Airways to enhance positive aspects, address concerns, and further improve the overall flying experience.
+*Each topic represents a different facet of the flying experience, with Topics 1 and 2 focusing on premium class and flights to Tokyo, Topic 3 on flights to and from London, Topic 4 on general airline experiences, and Topic 5 on overall flight experiences and destinations.*
+
+
+# Conclusion
+- In conclusion, this comprehensive analysis of British Airways customer reviews offers a detailed perspective on passenger sentiments and key areas of concern. This wealth of insights equips British Airways with the tools needed for strategic decision-making aimed at boosting customer satisfaction. By proactively addressing identified pain points, capitalizing on positive aspects, and instituting continuous monitoring practices, British Airways can foster a customer-centric approach. This, in turn, has the potential to solidify the airline's standing in the competitive aviation industry. The findings from this analysis serve not only as a roadmap for immediate enhancements but also as a foundational resource for ongoing improvements. It underscores the impactful role of data-driven insights in steering operational excellence and shaping a positive customer experience.
+
 
 # Recommendation
 **Operational Challenges Require Attention:**
@@ -178,7 +136,3 @@ Encompasses discussions about flights with British Airways, focusing on seat com
 
 **Continuous Improvement Culture is Vital:**
 - The importance of ongoing improvements is emphasized. Establishing a culture of continuous enhancement based on customer feedback ensures sustained positive experiences.
-
-
-# Conclusion
-- In conclusion, this comprehensive analysis of British Airways customer reviews offers a detailed perspective on passenger sentiments and key areas of concern. This wealth of insights equips British Airways with the tools needed for strategic decision-making aimed at boosting customer satisfaction. By proactively addressing identified pain points, capitalizing on positive aspects, and instituting continuous monitoring practices, British Airways can foster a customer-centric approach. This, in turn, has the potential to solidify the airline's standing in the competitive aviation industry. The findings from this analysis serve not only as a roadmap for immediate enhancements but also as a foundational resource for ongoing improvements. It underscores the impactful role of data-driven insights in steering operational excellence and shaping a positive customer experience.
