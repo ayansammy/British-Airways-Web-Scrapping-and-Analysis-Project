@@ -78,6 +78,7 @@ These insights draw attention to the operational and service areas where the air
 **Using CountVectorizer and LatentDirichletAllocation for Topic Modeling**
 
 CountVectorizer is a feature extraction technique used in natural language processing (NLP) to convert text data into numerical feature vectors. It is a part of the scikit-learn library in Python. CountVectorizer operates by tokenizing text documents, converting them into a matrix of token counts.
+
 Latent Dirichlet Allocation (LDA) LDA is often categorized as a topic modeling technique, it can also be considered a form of feature engineering. It processes the features created by CountVectorizer (or another vectorizer) to discover the underlying topics in a text corpus. In doing so, it generates a new set of features related to the topics within the documents. Each document is then described by its distribution of topics, and each topic is characterized by its distribution of words. These topic distributions can be used as features in downstream tasks, such as document classification, and clustering, or as part of a recommendation system.
 
 ## Topic Modeling Results
