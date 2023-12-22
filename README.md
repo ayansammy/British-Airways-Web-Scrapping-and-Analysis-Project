@@ -1,4 +1,4 @@
-![IMG](C:\Users\Sam\Documents\BA Project - Finished\British-Airways-Web-Scrapping-and-Analysis-Project\IMG)
+![Home Page Image](IMG/home_page_img.png)
 # British Airways Customer Reviews Analysis
 *Web scraping project to gain company insights*
 
