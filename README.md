@@ -65,7 +65,7 @@ The following insights can be gleaned from the areas of importance indicated by 
 *These insights reflect the airline’s successful areas from the perspective of its customers and can be used to maintain and enhance service quality where it is most appreciated.*
 
 **Visualizing Top 20 Negative Reviews**
-![Negative Reviews](Images/negative_sentimentt.png)
+![Negative Reviews](Images/negative_sentiment.png)
 
 
 The word cloud for Negative Sentiment Reviews displays the words most commonly found in unfavorable British Airways reviews, giving us clues about what might be upsetting customers. The size and prominence of certain words highlight the primary concerns.
