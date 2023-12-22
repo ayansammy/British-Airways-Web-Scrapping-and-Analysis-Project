@@ -1,4 +1,4 @@
-![Home Page Image](IMG/home_page_img.png)
+![Home Page Image](Images/home_page_img.png)
 # British Airways Customer Reviews Analysis
 *Web scraping project to gain company insights*
 
