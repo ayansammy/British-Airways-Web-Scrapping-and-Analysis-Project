@@ -33,6 +33,7 @@ British Airways (BA) is the flag carrier airline of the United Kingdom (UK). Eve
 - In the initial phase of my analysis, I conducted sentiment analysis on customer reviews to gauge the overall sentiment towards British Airways. The sentiment scores were derived using the TextBlob library in Python. This library provides a simple and intuitive way to analyze the sentiment of text data, assigning polarity scores to indicate the positivity or negativity of the content. Additionally, the analysis includes subjectivity scores, which measure the degree of objectivity or subjectivity in the reviews. The sentiment scores were then used to categorize each review into one of three categories: 'Positive,' 'Neutral,' or 'Negative,' based on the polarity scores.
 
 ## Findings
+![Home Page Image](Images/bar_plot.png)
 
 The above bar plot conveys the sentiment distribution across a set of customer reviews, segmented into three distinct categories: Positive, Negative, and Neutral
 
@@ -40,12 +41,14 @@ The predominant height of the Positive sentiment bar indicates a majority of fav
 
 # Word Clouds Analysis
 I utilized word cloud visualizations to identify the most frequent words associated with customer reviews. This visual approach allowed me to pinpoint dominant themes and topics across the dataset.
+![Common Words](Images/most_common_words.png)
 
-**Key Insights**
+
 
 **Positive Sentiment Word Cloud:**
-Using Word Cloud to Visualize Top 20 Positive Reviews
+**Using Word Cloud to Visualize Top 20 Positive Reviews**
 
+![Positive Reviews](Images/positive_sentiment.png)
 
 The word cloud above represents Positive Sentiment Reviews. It is a visual compilation of the most frequently mentioned terms within favorable feedback. It highlights areas of customer satisfaction through the prominence of certain words, reflecting key aspects of the airline’s service that have resonated positively with passengers.
 
@@ -61,7 +64,8 @@ The following insights can be gleaned from the areas of importance indicated by 
 - Business Class: The term ‘business class’ is distinct within the cloud, which points to a higher level of satisfaction among passengers traveling in this premium category.
 *These insights reflect the airline’s successful areas from the perspective of its customers and can be used to maintain and enhance service quality where it is most appreciated.*
 
-Visualizing Top 20 Negative Reviews
+**Visualizing Top 20 Negative Reviews**
+![Negative Reviews](Images/negative_sentimentt.png)
 
 
 The word cloud for Negative Sentiment Reviews displays the words most commonly found in unfavorable British Airways reviews, giving us clues about what might be upsetting customers. The size and prominence of certain words highlight the primary concerns.
